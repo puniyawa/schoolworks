@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+  overflow-x: hidden;
+}
+.intro{
+    background-color: rgba(255, 255, 255); 
+
+    padding: 25px;
+    
+}
+.intro-all{
+    background-color: rgba(252, 249, 251, 0.651); 
+    backdrop-filter: blur(8px);
+    padding: 25px;
+ 
+}
+.clock-image{
+    width: 35vw;    
+}
+.greetings-text{
+  font-size: 5rem;
+  color: #485a30; 
+  text-shadow: 0 1px 20px #e6e6ca;
+}
+@media screen and (max-width: 1000px) { 
+
+    .clock-image { display: none; }  
+    .greetings-text{
+      font-size: 3rem;
+    }
+}
+
+.premiere{
+    background-image:
+    linear-gradient(to right, #485a30, #485a30a2, rgba(236, 236, 236, 0)),
+    url('../img/pnc.jpg');
+    border-radius: 20px;
+    min-height: 250px;
+    color: white;
+    background-position: center;
+}
+
+.premiere-2{
+    background-image:
+    linear-gradient(to left, #485a30, #485a30a2, rgba(236, 236, 236, 0)),
+    url('../img/cab.jpg');
+    border-radius: 20px;
+    min-height: 250px;
+    color: white;
+    background-position: center;
+}
+
+.loginBtn {
+  padding: 0.75em 2em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: 15px;
+  border-color: #000;
+  border-radius: 45px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+  
+.loginBtn:hover {
+  background-color:#485a30; 
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.loginBtn:active {
+  transform: translateY(-1px);
+}
+
+.nav-link:hover{
+  color:#485a30; 
+}
+
+.bg-logo{
+  position: absolute;
+  z-index: -1;
+  opacity: 0.1;
+  top: -150px;
+  right: -350px;
+  
+}
+
+/* Footer */
+#footer {
+	background-image: linear-gradient(60deg, #2a3c29 0%, #486349 100%);
+}
+#footer .footer {
+	min-height: 200px;
+	flex-direction: column;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+#footer h2 {
+	color: white;
+	font-weight: 500;
+	font-size: 1.8rem;
+	letter-spacing: 0.1rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#footer .social-icon {
+	display: flex;
+	margin-bottom: 30px;
+}
+#footer .social-item {
+	height: 50px;
+	width: 50px;
+	margin: 0 5px;
+}
+#footer .social-item img {
+	filter: grayscale(1);
+	transition: 0.3s ease filter;
+}
+#footer .social-item:hover img {
+	filter: grayscale(0);
+}
+#footer p {
+	color: white;
+	font-size: 1.3rem;
+}
+/* End Footer */
